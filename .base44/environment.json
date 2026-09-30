@@ -1,0 +1,25 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "GEMINI_API_KEY",
+      "description": "Google Gemini API key — required for the AI to generate real trading signals. Get it from https://aistudio.google.com/apikey",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "BINANCE_API_KEY",
+      "description": "Binance API key — optional; without it the bot uses mock market data. Get it from your Binance account API settings.",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "BINANCE_API_SECRET",
+      "description": "Binance API secret — optional; paired with BINANCE_API_KEY. Get it from your Binance account API settings.",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+python-binance
+pandas
+python-dotenv
+requests
+google-generativeai
+flask
